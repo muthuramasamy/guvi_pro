@@ -8,7 +8,7 @@ for i in range(len(n)):
 	elif n[i]  in a:
 		b.append(len(a))
 		a=""
-	if i==len(a)-1:
+	if i==len(n)-1:
 		b.append(len(a))
 		a=""
 print(max(b))
