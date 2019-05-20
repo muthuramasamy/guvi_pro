@@ -1,10 +1,19 @@
-c=0
-k,a,b=map(int,input().split())
-for i in range(0,k):
-	if (a*i + b*i) == k:
-		c=1
-if c==1:
-	print("YES")
+# your code goes here
+
+n,a,b=map(int,input().split())
+if n%2==0:
+	if a+b<n:
+		print("YES")
+	elif a+b==n:
+		print("YES")
+	elif a%2==0 and b%2==0:
+		print("NO")
+	else:
+		print("NO")
 else:
-	print("NO")
-	
+	if a+b<n:
+		print("NO")
+	elif a+b==n:
+		print("YES")
+	else:
+		print("NO")
